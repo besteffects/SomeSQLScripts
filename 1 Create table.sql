@@ -5,7 +5,12 @@ use Customer;
 
 create table Customer 
 (
-First varchar (50),
+Id int Primary Key identity (1,1),
+FirstName varchar (50),
 LastName varchar (50),
-Age int
+Age int,
+City varchar(50)
 );
+
+select* 
+from Customer;

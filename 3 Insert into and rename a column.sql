@@ -48,7 +48,7 @@ insert into Customer
 values ('Mike', 'Schmidt', 61, 'Los Angeles');
 
 
-
+select * from Customer
 
 
 --rename a column
