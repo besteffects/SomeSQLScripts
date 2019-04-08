@@ -25,10 +25,7 @@ select * from Products;
 select * from Customer;
 
 insert into Orders (OrderDate, CustomerID, ProductID)
-values (GETDATE(),2,2)
-
-select * from Products;
-select * from Orders;
+values (GETDATE(),5,2)
 
 update Products
 set ProductName='Bat'
