@@ -35,3 +35,9 @@ from Orders o
 inner join Products as p on o.ProductID=p.id
 inner join Customer c on o.CustomerID=C.Id
 group by c.LastName, p.ProductName;
+
+select c.City, sum(p.Price) as Total, AVG(p.price) as Average
+from Orders o
+inner join Products p on o.ProductID=p.id
+inner join Customer c on o.CustomerID=c.Id
+group by c.City;
